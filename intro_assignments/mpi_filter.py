@@ -5,6 +5,7 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
 
+# ADJUST THE FILTER FUNCTION HERE
 def predicate(item):
     if item % 2 == 0:
         return True
